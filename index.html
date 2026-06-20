@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Qurban</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🐄 Pendaftaran Qurban</h1>
+
+    <p class="subtitle">
+        Pendataan Peserta Qurban
+    </p>
+
+    <form id="formPeserta">
+
+        <input
+            type="text"
+            id="nama"
+            placeholder="Nama Peserta"
+            required
+        >
+
+        <input
+            type="text"
+            id="phone"
+            placeholder="Nomor HP"
+            required
+        >
+
+        <select id="jenis">
+            <option value="Sapi">Sapi</option>
+            <option value="Kambing">Kambing</option>
+        </select>
+
+        <input
+            type="number"
+            id="jumlahHewan"
+            placeholder="Jumlah Hewan"
+            min="1"
+            required
+        >
+
+        <button type="submit">
+            Simpan
+        </button>
+
+    </form>
+
+    <hr>
+
+    <h2>Daftar Peserta</h2>
+
+    <div id="listPeserta"></div>
+
+</div>
+
+<script type="module" src="/js/app.js"></script>
+
+</body>
+</html>
